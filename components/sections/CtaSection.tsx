@@ -1,20 +1,51 @@
 import FadeInSection from '@/components/ui/FadeInSection'
+import GhostIcon from '@/components/icons/GhostIcon'
 
 export default function CtaSection() {
   return (
-    <section id="contact" className="bg-gradient-to-b from-white to-purple-50/40 py-32 px-6">
-      <div className="max-w-3xl mx-auto text-center">
+    <section id="contact" className="relative bg-duppy-cream-alt py-32 px-6 overflow-hidden">
+      {/* Ghost cluster — right side */}
+      <div className="absolute right-[-20px] bottom-[-20px] pointer-events-none" aria-hidden="true">
+        <div className="flex items-end gap-3 opacity-[0.10]">
+          <GhostIcon size={60} color="#0C0A07" bgColor="transparent" />
+          <GhostIcon size={100} color="#0C0A07" bgColor="transparent" />
+          <GhostIcon size={72} color="#0C0A07" bgColor="transparent" />
+        </div>
+      </div>
+
+      {/* Amber glow */}
+      <div
+        className="absolute top-0 left-0 w-[40vw] h-[40vh] pointer-events-none"
+        style={{ background: 'radial-gradient(ellipse at top left, rgba(232,148,58,0.12) 0%, transparent 60%)' }}
+        aria-hidden="true"
+      />
+
+      <div className="max-w-3xl mx-auto text-center relative z-10">
         <FadeInSection>
-          <h2 className="text-4xl md:text-5xl font-bold text-[#111111] tracking-tight mb-8 leading-tight">
-            Ready to put an AI operator to work in your business?
+          <div className="flex justify-center mb-8">
+            <GhostIcon size={48} color="#E8943A" className="ghost-float" />
+          </div>
+
+          <h2
+            className="text-duppy-text leading-tight mb-4"
+            style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: 'clamp(32px, 4vw, 52px)' }}
+          >
+            Ready to give your team
+            <br />
+            <em>an unfair advantage?</em>
           </h2>
+
+          <p className="text-duppy-body text-lg mb-10">
+            See how one simple command handles your daily operations in real time.
+          </p>
+
           <a
             href="mailto:hello@duppy.ai"
-            className="inline-flex items-center justify-center bg-accent text-white font-semibold text-lg px-10 py-4 rounded-full hover:bg-[#5a32a3] transition-colors mb-6"
+            className="inline-flex items-center gap-3 bg-duppy-amber text-white font-semibold text-lg px-10 py-4 rounded-[12px] hover:bg-duppy-amber-dark transition-all duration-200 shadow-sm hover:shadow-md"
           >
-            Get in touch
+            <GhostIcon size={22} color="white" />
+            Book a Demo
           </a>
-          <p className="text-[#6B7280] text-base">See a live demo in under 2 minutes.</p>
         </FadeInSection>
       </div>
     </section>

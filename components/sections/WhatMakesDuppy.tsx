@@ -1,63 +1,89 @@
 import FadeInSection from '@/components/ui/FadeInSection'
 import SectionLabel from '@/components/ui/SectionLabel'
+import GhostIcon from '@/components/icons/GhostIcon'
 
 const cards = [
   {
+    num: '01',
     title: 'Your Brand',
-    body: 'Every deployment carries your name, your colors, your identity. Your team sees their company, not ours.',
+    body: 'We build the app to look like your company. It is your logo, your colors, and your name on the screen. Powered by Duppy.',
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <path d="M12 2L3 7v5c0 5.25 3.75 10.15 9 11.35C17.25 22.15 21 17.25 21 12V7L12 2z" fill="#6C3FC5" />
+      <svg width="44" height="44" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M14 3l2.5 5H9.5L12 3z" />
+        <rect x="4" y="8" width="20" height="14" rx="2" />
+        <path d="M10 22v-5h8v5" />
       </svg>
     ),
   },
   {
-    title: 'Your Systems',
-    body: 'We connect to what you already use. BisTrack, Spruce, Google Workspace, whatever runs your operation. Nothing gets replaced.',
+    num: '02',
+    title: 'Every System',
+    body: 'It plugs directly into the software you already use to run your operations: your inventory systems, your email, and your scheduling tools.',
     icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <rect x="3" y="3" width="8" height="8" rx="1" fill="#6C3FC5" />
-        <rect x="13" y="3" width="8" height="8" rx="1" fill="#6C3FC5" />
-        <rect x="3" y="13" width="8" height="8" rx="1" fill="#6C3FC5" />
-        <rect x="13" y="13" width="8" height="8" rx="1" fill="#6C3FC5" />
+      <svg width="44" height="44" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="3" y="3" width="8" height="8" rx="1.5" />
+        <rect x="17" y="3" width="8" height="8" rx="1.5" />
+        <rect x="3" y="17" width="8" height="8" rx="1.5" />
+        <rect x="17" y="17" width="8" height="8" rx="1.5" />
+        <path d="M11 7h6M7 11v6M21 11v6M11 21h6" />
       </svg>
     ),
   },
   {
-    title: 'Your AI',
-    body: "Trained on your product catalog, your pricing, your customers. It doesn't guess. It knows.",
-    icon: (
-      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-        <circle cx="12" cy="12" r="3" fill="#6C3FC5" />
-        <path
-          d="M12 2v3M12 19v3M2 12h3M19 12h3M4.93 4.93l2.12 2.12M16.95 16.95l2.12 2.12M4.93 19.07l2.12-2.12M16.95 7.05l2.12-2.12"
-          stroke="#6C3FC5"
-          strokeWidth="2"
-          strokeLinecap="round"
-        />
-      </svg>
-    ),
+    num: '03',
+    title: 'Voice First',
+    body: 'Zero training required. Your team just speaks to the app like a real person, and the invisible system does the heavy lifting.',
+    icon: null,
   },
 ]
 
 export default function WhatMakesDuppy() {
   return (
-    <section className="bg-white py-24 px-6">
-      <div className="max-w-7xl mx-auto">
-        <FadeInSection className="text-center mb-16">
+    <section className="relative bg-duppy-cream py-28 px-6 overflow-hidden">
+      <div
+        className="absolute right-[-60px] top-1/2 -translate-y-1/2 pointer-events-none ghost-drift"
+        aria-hidden="true"
+      >
+        <GhostIcon size={320} color="#E8943A" className="opacity-[0.06]" bgColor="transparent" />
+      </div>
+
+      <div className="max-w-7xl mx-auto relative z-10">
+        <FadeInSection className="mb-20">
           <SectionLabel className="mb-4 block">Why Duppy</SectionLabel>
-          <h2 className="text-4xl font-bold text-[#111111] tracking-tight max-w-2xl mx-auto">
-            Three commitments that shape every deployment.
+          <h2
+            className="text-duppy-text leading-tight max-w-2xl"
+            style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: 'clamp(32px, 4vw, 52px)' }}
+          >
+            We don't replace anything.{' '}
+            <span className="block sm:inline">We connect everything.</span>
           </h2>
         </FadeInSection>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {cards.map((card, i) => (
             <FadeInSection key={card.title} delay={i * 0.1}>
-              <div className="bg-white border border-[#E5E7EB] rounded-2xl p-8 shadow-sm hover:-translate-y-1 hover:shadow-lg transition-all duration-300 h-full">
-                <div className="mb-5">{card.icon}</div>
-                <h3 className="text-xl font-bold text-[#111111] mb-3">{card.title}</h3>
-                <p className="text-[#6B7280] leading-relaxed">{card.body}</p>
+              <div className="group relative bg-white rounded-2xl p-10 border border-duppy-cream-deep shadow-sm hover:shadow-[0_8px_40px_rgba(28,25,21,0.12)] hover:-translate-y-2 transition-all duration-300 h-full overflow-hidden">
+                {/* Hover accent top line */}
+                <div className="absolute top-0 left-0 right-0 h-0.5 bg-duppy-amber scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-t-2xl" />
+
+                {/* Number + icon */}
+                <div className="flex items-start justify-between mb-6">
+                  <span
+                    className="text-duppy-amber/30 leading-none group-hover:text-duppy-amber/50 transition-colors duration-300"
+                    style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: '80px', fontStyle: 'italic', lineHeight: '0.85' }}
+                  >
+                    {card.num}
+                  </span>
+
+                  <div className="text-duppy-amber/50 group-hover:text-duppy-amber transition-colors duration-300 mt-2">
+                    {card.icon ?? <GhostIcon size={44} color="currentColor" outline />}
+                  </div>
+                </div>
+
+                <h3 className="text-duppy-text mb-4" style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: '24px' }}>
+                  {card.title}
+                </h3>
+                <p className="text-duppy-body leading-relaxed">{card.body}</p>
               </div>
             </FadeInSection>
           ))}

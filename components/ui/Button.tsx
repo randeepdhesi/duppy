@@ -1,6 +1,6 @@
 interface Props {
   href: string
-  variant?: 'primary' | 'outline'
+  variant?: 'primary' | 'outline' | 'outline-dark'
   size?: 'default' | 'large'
   children: React.ReactNode
   className?: string
@@ -13,14 +13,15 @@ export default function Button({
   children,
   className = '',
 }: Props) {
-  const base = 'inline-flex items-center justify-center font-semibold rounded-full transition-all duration-200'
+  const base = 'inline-flex items-center justify-center font-semibold transition-all duration-200'
   const sizes = {
-    default: 'px-7 py-3 text-base',
-    large: 'px-10 py-4 text-lg',
+    default: 'px-7 py-3 text-base rounded-[10px]',
+    large: 'px-10 py-4 text-lg rounded-[12px]',
   }
   const variants = {
-    primary: 'bg-accent text-white hover:bg-[#5a32a3]',
-    outline: 'border-2 border-white text-white hover:bg-white hover:text-[#111111]',
+    primary: 'bg-duppy-amber text-white hover:bg-duppy-amber-dark shadow-sm hover:shadow-md',
+    outline: 'border-2 border-white/40 text-white hover:border-white hover:bg-white/10',
+    'outline-dark': 'border-2 border-duppy-text/20 text-duppy-text hover:border-duppy-amber hover:text-duppy-amber',
   }
 
   return (
