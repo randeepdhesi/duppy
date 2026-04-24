@@ -162,18 +162,6 @@ export default function Nav() {
                   {link.label}
                 </a>
               ))}
-              <a
-                href="mailto:hello@duppy.ai"
-                onClick={closeMenu}
-                className="text-white/80 hover:text-white transition-colors w-full text-center py-5 border-b border-white/8"
-                style={{
-                  fontFamily: 'var(--font-fraunces), serif',
-                  fontSize: 'clamp(32px, 8vw, 48px)',
-                  fontStyle: 'italic',
-                }}
-              >
-                Contact
-              </a>
             </nav>
 
             {/* Bottom row */}
