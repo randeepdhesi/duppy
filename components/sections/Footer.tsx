@@ -87,7 +87,7 @@ export default function Footer() {
             <p className="text-duppy-muted text-base leading-relaxed">
               The invisible operator behind your business.
               <br />
-              Your brand, your systems, one interface.
+              Your brand, your tools, one interface.
             </p>
 
             <div className="flex items-center gap-3">
