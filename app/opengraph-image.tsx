@@ -5,6 +5,8 @@ export const alt = 'Duppy — Your Invisible Operator'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
+const GHOST_BODY = 'M 20,1 C 9,1 2,8 2,17 L 2,30 Q 2,38 8,38 Q 11,38 13,34 Q 15,30 17,34 Q 19,38 20,38 Q 21,38 23,34 Q 25,30 27,34 Q 29,38 32,38 Q 38,38 38,30 L 38,17 C 38,8 31,1 20,1 Z'
+
 export default function Image() {
   return new ImageResponse(
     (
@@ -41,19 +43,16 @@ export default function Image() {
             display: 'flex',
             flexDirection: 'row',
             alignItems: 'center',
-            gap: 40,
+            gap: 44,
           }}
         >
-          {/* Ghost logo mark */}
-          <svg width="148" height="148" viewBox="0 0 32 32">
-            <rect width="32" height="32" rx="7" fill="#1A1712" />
-            <g transform="translate(4, 3)">
-              <path
-                d="M3 11a9 9 0 0 1 18 0v10l-2.25-1.8-2.25 1.8-2.25-1.8L12 21l-2.25-1.8L7.5 21l-2.25-1.8L3 21V11z M7.2 11a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 0 0-3.6 0 M13.2 11a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 0 0-3.6 0"
-                fill="#E8943A"
-                fillRule="evenodd"
-              />
-            </g>
+          {/* Ghost — exact paths from GhostIcon, no background container */}
+          <svg width="164" height="164" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d={GHOST_BODY} fill="#E8943A" />
+            <circle cx="15" cy="18" r="2.2" fill="#0C0A07" fillOpacity="0.95" />
+            <circle cx="25" cy="18" r="2.2" fill="#0C0A07" fillOpacity="0.95" />
+            <circle cx="15.6" cy="18.5" r="0.9" fill="#E8943A" fillOpacity="0.5" />
+            <circle cx="25.6" cy="18.5" r="0.9" fill="#E8943A" fillOpacity="0.5" />
           </svg>
 
           {/* DUPPY wordmark */}
@@ -69,7 +68,6 @@ export default function Image() {
             DUPPY
           </div>
         </div>
-
       </div>
     ),
     { ...size }
