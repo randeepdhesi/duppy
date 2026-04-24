@@ -30,7 +30,7 @@ const instances = [
 
 export default function PoweredByDuppy() {
   return (
-    <section className="relative bg-duppy-cream-alt py-28 px-6 overflow-hidden">
+    <section id="industries" className="relative bg-duppy-cream-alt py-28 px-6 overflow-hidden">
       {/* Ghost watermark */}
       <div
         className="absolute left-[-80px] top-1/2 -translate-y-[40%] pointer-events-none ghost-drift"

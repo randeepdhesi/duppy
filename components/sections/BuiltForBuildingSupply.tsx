@@ -82,7 +82,7 @@ const integrations = [
 
 export default function BuiltForBuildingSupply() {
   return (
-    <section id="industries" className="relative bg-duppy-dark py-28 px-6 overflow-hidden border-t border-white/[0.06]">
+    <section className="relative bg-duppy-dark py-28 px-6 overflow-hidden border-t border-white/[0.06]">
       <div
         className="absolute right-[-40px] top-1/2 -translate-y-1/2 pointer-events-none ghost-float"
         aria-hidden="true"
