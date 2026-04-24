@@ -12,12 +12,6 @@ describe('Footer', () => {
     expect(screen.getByText(/The spirit behind your operation/i)).toBeInTheDocument()
   })
 
-  it('renders product links', () => {
-    render(<Footer />)
-    expect(screen.getByText('How it works')).toBeInTheDocument()
-    expect(screen.getByText('Industries')).toBeInTheDocument()
-  })
-
   it('renders copyright', () => {
     render(<Footer />)
     expect(screen.getByText(/2026 DUPPY/i)).toBeInTheDocument()

@@ -104,24 +104,6 @@ export default function Footer() {
             </a>
           </div>
 
-          {/* Nav columns — stacked on mobile, side by side on desktop */}
-          <div className="flex flex-col md:flex-row gap-10 md:gap-16">
-
-            {/* Product links */}
-            <div>
-              <h4 className="text-white text-sm font-semibold uppercase tracking-widest mb-5">The Operator</h4>
-              <ul className="flex flex-col gap-3">
-                {productLinks.map((link) => (
-                  <li key={link.label}>
-                    <a href={link.href} className="text-duppy-muted text-base hover:text-white transition-colors">
-                      {link.label}
-                    </a>
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-          </div>
         </div>
 
         {/* Copyright row */}
