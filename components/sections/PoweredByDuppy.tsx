@@ -44,7 +44,7 @@ export default function PoweredByDuppy() {
           <SectionLabel className="mb-4 block">Your OS, our engine</SectionLabel>
           <h2
             className="text-duppy-text leading-tight max-w-2xl mb-4"
-            style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: 'clamp(32px, 4vw, 52px)' }}
+            style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: 'clamp(20px, 6vw, 52px)' }}
           >
             Your business. Your brand. Powered by Duppy.
           </h2>
