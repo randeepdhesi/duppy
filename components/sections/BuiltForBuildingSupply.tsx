@@ -6,22 +6,22 @@ const industries = [
   {
     num: '01',
     name: 'Building Supply',
-    desc: 'Quotes, orders, deliveries, and customer follow-up spread across five different tools. Duppy ties them together so nothing falls through the cracks.',
+    desc: 'Every quote, order, and delivery update runs through one operator that already knows your ERP, your inbox, and exactly how your business moves product.',
   },
   {
     num: '02',
     name: 'Trucking & Logistics',
-    desc: 'Dispatch, manifests, and delivery coordination all managed through a single voice-powered operator.',
+    desc: 'Every load assignment, manifest, and driver check-in moves through one operator so your dispatch team always knows where things stand without chasing updates.',
   },
   {
     num: '03',
     name: 'Law Firms',
-    desc: 'New matters, client follow-ups, billing reminders, and scheduling shouldn\'t each live in a different place. Duppy brings them together so your team spends less time chasing information.',
+    desc: 'Every new matter, billing reminder, and court date flows through one operator so your team spends their time on clients, not on tracking down information.',
   },
   {
     num: '04',
     name: 'Wholesale Distribution',
-    desc: 'Inventory, orders, invoicing, and customer follow-up running through one interface your whole team can use.',
+    desc: 'Every purchase order, inventory update, and customer follow-up runs through one operator so your sales and ops teams are always working from the same picture.',
   },
 ]
 
