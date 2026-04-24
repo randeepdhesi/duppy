@@ -6,7 +6,7 @@ const cards = [
   {
     num: '01',
     title: 'Your Brand',
-    body: 'We build the app to look like your company. It is your logo, your colors, and your name on the screen. Powered by Duppy.',
+    body: 'We build the operator to look like your company, with your logo, your colors, and your name on the screen. Everything your team sees belongs to your brand. Duppy stays completely invisible behind it.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <path d="M14 3l2.5 5H9.5L12 3z" />
@@ -18,7 +18,7 @@ const cards = [
   {
     num: '02',
     title: 'Every System',
-    body: 'It plugs directly into the software you already use to run your operations: your inventory systems, your email, and your scheduling tools.',
+    body: 'Duppy connects every tool your business already runs: your ERP, your email, your calendar, your CRM. Your team stops switching between systems and starts getting answers from one place.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
         <rect x="3" y="3" width="8" height="8" rx="1.5" />
@@ -31,8 +31,8 @@ const cards = [
   },
   {
     num: '03',
-    title: 'Voice First',
-    body: 'Zero training required. Your team just speaks to the app like a real person, and the invisible system does the heavy lifting.',
+    title: 'Just Ask',
+    body: "There's nothing to install and nobody to train. Your team just speaks or types in plain language, and Duppy executes the task across every connected system at once.",
     icon: null,
   },
 ]
