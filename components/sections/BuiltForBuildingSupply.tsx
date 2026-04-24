@@ -15,8 +15,8 @@ const industries = [
   },
   {
     num: '03',
-    name: 'Real Estate',
-    desc: 'Listings, CRM, calendar, and client communications all connected through one interface.',
+    name: 'Law Firms',
+    desc: 'Client intake, billing, calendar, and case management all connected through one invisible operator.',
   },
   {
     num: '04',
