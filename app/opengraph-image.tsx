@@ -5,28 +5,7 @@ export const alt = 'Duppy — Your Invisible Operator'
 export const size = { width: 1200, height: 630 }
 export const contentType = 'image/png'
 
-async function loadGoogleFont(family: string, weight: number): Promise<ArrayBuffer> {
-  const css = await fetch(
-    `https://fonts.googleapis.com/css2?family=${family}:wght@${weight}&display=swap`,
-    {
-      headers: {
-        'User-Agent':
-          'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36',
-      },
-    }
-  ).then((r) => r.text())
-
-  const match = css.match(/src: url\((.+?)\) format\('woff2'\)/)
-  if (!match) throw new Error('Could not parse font URL from Google Fonts CSS')
-  return fetch(match[1]).then((r) => r.arrayBuffer())
-}
-
-export default async function Image() {
-  const [dmSansBold, dmSansRegular] = await Promise.all([
-    loadGoogleFont('DM+Sans', 700),
-    loadGoogleFont('DM+Sans', 400),
-  ])
-
+export default function Image() {
   return new ImageResponse(
     (
       <div
@@ -38,11 +17,11 @@ export default async function Image() {
           alignItems: 'center',
           justifyContent: 'center',
           backgroundColor: '#0C0A07',
-          fontFamily: 'DM Sans, sans-serif',
+          fontFamily: 'system-ui, -apple-system, sans-serif',
           position: 'relative',
         }}
       >
-        {/* Subtle amber glow behind content */}
+        {/* Subtle amber glow */}
         <div
           style={{
             position: 'absolute',
@@ -52,7 +31,7 @@ export default async function Image() {
             width: 600,
             height: 400,
             borderRadius: 9999,
-            background: 'radial-gradient(ellipse at center, rgba(232,148,58,0.06) 0%, transparent 70%)',
+            background: 'radial-gradient(ellipse at center, rgba(232,148,58,0.07) 0%, transparent 70%)',
           }}
         />
 
@@ -72,7 +51,7 @@ export default async function Image() {
         <div
           style={{
             fontSize: 128,
-            fontWeight: 700,
+            fontWeight: 800,
             color: '#F5F0E8',
             letterSpacing: '-0.03em',
             lineHeight: 1,
@@ -122,12 +101,6 @@ export default async function Image() {
         </div>
       </div>
     ),
-    {
-      ...size,
-      fonts: [
-        { name: 'DM Sans', data: dmSansBold, style: 'normal', weight: 700 },
-        { name: 'DM Sans', data: dmSansRegular, style: 'normal', weight: 400 },
-      ],
-    }
+    { ...size }
   )
 }

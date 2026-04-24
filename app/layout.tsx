@@ -27,12 +27,14 @@ export const metadata: Metadata = {
     url: 'https://duppy.ai',
     siteName: 'Duppy',
     type: 'website',
+    images: [{ url: 'https://duppy.ai/opengraph-image', width: 1200, height: 630, alt: 'Duppy — Your Invisible Operator' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Duppy | Your Invisible Operator',
     description:
       'Duppy connects your ERP, email, CRM, and calendar into one voice-powered operator. Built for your brand, deployed in days.',
+    images: ['https://duppy.ai/opengraph-image'],
   },
 }
 
