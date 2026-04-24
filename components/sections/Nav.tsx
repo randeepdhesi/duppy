@@ -5,7 +5,7 @@ import GhostIcon from '@/components/icons/GhostIcon'
 
 const navLinks = [
   { label: 'How it works', href: '#how-it-works' },
-  { label: 'Industries', href: '#industries' },
+  { label: 'Industries', href: '/industries' },
   { label: 'About', href: '#about' },
 ]
 
