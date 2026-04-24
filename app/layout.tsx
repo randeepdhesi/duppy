@@ -16,9 +16,26 @@ const dmSans = DM_Sans({
 })
 
 export const metadata: Metadata = {
-  title: 'DUPPY — AI Operating Systems for Business',
+  metadataBase: new URL('https://duppy.ai'),
+  title: 'Duppy — The Invisible Operator',
   description:
-    'DUPPY builds AI operating systems that connect your ERP, email, calendar, and CRM into one voice-driven interface — branded to your company, trained on your data, deployed in days.',
+    'Duppy connects your ERP, email, CRM, and calendar into one voice-powered operator. Built for your brand, deployed in days.',
+  openGraph: {
+    title: 'Duppy — The Invisible Operator',
+    description:
+      'Duppy connects your ERP, email, CRM, and calendar into one voice-powered operator. Built for your brand, deployed in days.',
+    url: 'https://duppy.ai',
+    siteName: 'Duppy',
+    type: 'website',
+    images: [{ url: '/og-image.jpg', width: 1200, height: 630, alt: 'Duppy — The Invisible Operator' }],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Duppy — The Invisible Operator',
+    description:
+      'Duppy connects your ERP, email, CRM, and calendar into one voice-powered operator. Built for your brand, deployed in days.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
