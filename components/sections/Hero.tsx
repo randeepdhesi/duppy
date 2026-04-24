@@ -52,11 +52,16 @@ export default function Hero() {
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button href="#how-it-works" variant="primary" size="large">
-                See it in action
-              </Button>
-              <Button href="mailto:hello@duppy.ai" variant="outline" size="large">
-                Get in touch
+              <button
+                onClick={() => setVideoOpen(true)}
+                className="inline-flex items-center justify-center gap-2.5 font-semibold transition-all duration-200 bg-duppy-amber text-white hover:bg-duppy-amber-dark shadow-sm hover:shadow-md px-10 py-4 text-lg rounded-[12px]"
+              >
+                See
+                <GhostIcon size={20} color="white" bgColor="transparent" />
+                DUPPY in action
+              </button>
+              <Button href="https://duppy.typeform.com/pricing" variant="outline" size="large">
+                Get pricing
               </Button>
             </div>
 
