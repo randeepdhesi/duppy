@@ -51,7 +51,7 @@ body { background-color: #F5F0E8; color: #1C1915; }
   0%   { transform: translateX(0); }
   100% { transform: translateX(-50%); }
 }
-.marquee-track { animation: marquee 18s linear infinite; }
+.marquee-track { animation: marquee 10s linear infinite; }
 .marquee-track:hover { animation-play-state: paused; }
 
 /* Typing cursor blink */
