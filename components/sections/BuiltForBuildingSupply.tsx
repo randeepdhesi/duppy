@@ -1,7 +1,6 @@
 import FadeInSection from '@/components/ui/FadeInSection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import GhostIcon from '@/components/icons/GhostIcon'
-import Button from '@/components/ui/Button'
 
 const industries = [
   {
@@ -204,17 +203,12 @@ export default function BuiltForBuildingSupply() {
 
         {/* Catch-all */}
         <FadeInSection delay={0.2} className="mt-10">
-          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl border border-white/8 bg-white/[0.03] px-8 py-7">
-            <div className="flex items-center gap-4">
-              <GhostIcon size={32} color="#E8943A" bgColor="transparent" className="opacity-60 flex-shrink-0" />
-              <p className="text-duppy-muted text-base leading-snug">
-                <span className="text-white font-medium">Not on the list?</span>{' '}
-                Duppy can be tailored to any business that runs on more than one tool.
-              </p>
-            </div>
-            <Button href="https://cal.com/duppy/demo" variant="outline" size="default" className="whitespace-nowrap flex-shrink-0">
-              Let&apos;s talk
-            </Button>
+          <div className="flex items-center justify-center gap-3">
+            <GhostIcon size={18} color="#E8943A" bgColor="transparent" className="opacity-50 flex-shrink-0" />
+            <p className="text-duppy-muted text-sm text-center">
+              <span className="text-white/70">Not on the list?</span>{' '}
+              Duppy can be tailored to any business that runs on more than one tool.
+            </p>
           </div>
         </FadeInSection>
 
