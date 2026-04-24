@@ -113,7 +113,7 @@ export default function BuiltForBuildingSupply() {
               Every industry has its own language. Duppy learns yours, so your team gets an operator that already knows how your business works from day one.
             </p>
 
-            <div className="flex flex-wrap gap-x-7 gap-y-5">
+            <div className="grid grid-cols-2 sm:grid-cols-3 gap-x-6 gap-y-6">
               {integrations.map(({ name, mark }) => (
                 <div
                   key={name}
