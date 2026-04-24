@@ -37,7 +37,7 @@ export default function HowItWorks() {
             className="text-white leading-tight max-w-2xl"
             style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: 'clamp(32px, 4vw, 52px)' }}
           >
-            Just tell it what to do.
+            Just talk to it.
           </h2>
         </FadeInSection>
 
