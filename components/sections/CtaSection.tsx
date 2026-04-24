@@ -36,7 +36,7 @@ export default function CtaSection() {
           </h2>
 
           <p className="text-duppy-body text-lg mb-10">
-            See how one simple command handles your daily operations in real time.
+            In 15 minutes, we'll show you Duppy running your actual workflow.
           </p>
 
           <a
@@ -44,7 +44,7 @@ export default function CtaSection() {
             className="inline-flex items-center gap-3 bg-duppy-amber text-white font-semibold text-lg px-10 py-4 rounded-[12px] hover:bg-duppy-amber-dark transition-all duration-200 shadow-sm hover:shadow-md"
           >
             <GhostIcon size={22} color="white" />
-            Book a Demo
+            See It Live
           </a>
         </FadeInSection>
       </div>
