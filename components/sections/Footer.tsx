@@ -131,7 +131,7 @@ export default function Footer() {
 
             {/* Company links */}
             <div>
-              <h4 className="text-white text-sm font-semibold uppercase tracking-widest mb-5">The Studio</h4>
+              <h4 className="text-white text-sm font-semibold uppercase tracking-widest mb-5">Company</h4>
               <ul className="flex flex-col gap-3">
                 {companyLinks.map((link) => (
                   <li key={link.label}>
