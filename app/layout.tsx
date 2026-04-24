@@ -17,7 +17,7 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://duppy.ai'),
-  title: 'Duppy — The Invisible Operator',
+  title: 'Duppy | The Invisible Operator',
   description:
     'Duppy connects your ERP, email, CRM, and calendar into one voice-powered operator. Built for your brand, deployed in days.',
   openGraph: {
