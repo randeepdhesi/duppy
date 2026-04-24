@@ -21,44 +21,53 @@ export default function Image() {
           position: 'relative',
         }}
       >
-        {/* Subtle amber glow */}
+        {/* Ambient glow */}
         <div
           style={{
             position: 'absolute',
             top: '50%',
             left: '50%',
             transform: 'translate(-50%, -50%)',
-            width: 600,
+            width: 700,
             height: 400,
             borderRadius: 9999,
             background: 'radial-gradient(ellipse at center, rgba(232,148,58,0.07) 0%, transparent 70%)',
           }}
         />
 
-        {/* Ghost icon */}
-        <svg width="72" height="72" viewBox="0 0 32 32">
-          <rect width="32" height="32" rx="7" fill="#1A1712" />
-          <g transform="translate(4, 3)">
-            <path
-              d="M3 11a9 9 0 0 1 18 0v10l-2.25-1.8-2.25 1.8-2.25-1.8L12 21l-2.25-1.8L7.5 21l-2.25-1.8L3 21V11z M7.2 11a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 0 0-3.6 0 M13.2 11a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 0 0-3.6 0"
-              fill="#E8943A"
-              fillRule="evenodd"
-            />
-          </g>
-        </svg>
-
-        {/* DUPPY wordmark */}
+        {/* Horizontal logo lockup */}
         <div
           style={{
-            fontSize: 128,
-            fontWeight: 800,
-            color: '#F5F0E8',
-            letterSpacing: '-0.03em',
-            lineHeight: 1,
-            marginTop: 28,
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            gap: 40,
           }}
         >
-          DUPPY
+          {/* Ghost logo mark */}
+          <svg width="148" height="148" viewBox="0 0 32 32">
+            <rect width="32" height="32" rx="7" fill="#1A1712" />
+            <g transform="translate(4, 3)">
+              <path
+                d="M3 11a9 9 0 0 1 18 0v10l-2.25-1.8-2.25 1.8-2.25-1.8L12 21l-2.25-1.8L7.5 21l-2.25-1.8L3 21V11z M7.2 11a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 0 0-3.6 0 M13.2 11a1.8 1.8 0 1 0 3.6 0 1.8 1.8 0 0 0-3.6 0"
+                fill="#E8943A"
+                fillRule="evenodd"
+              />
+            </g>
+          </svg>
+
+          {/* DUPPY wordmark */}
+          <div
+            style={{
+              fontSize: 140,
+              fontWeight: 800,
+              color: '#F5F0E8',
+              letterSpacing: '-0.03em',
+              lineHeight: 1,
+            }}
+          >
+            DUPPY
+          </div>
         </div>
 
         {/* Amber rule */}
@@ -67,7 +76,7 @@ export default function Image() {
             width: 48,
             height: 2,
             backgroundColor: '#E8943A',
-            marginTop: 28,
+            marginTop: 40,
             borderRadius: 1,
           }}
         />
@@ -75,29 +84,15 @@ export default function Image() {
         {/* Tagline */}
         <div
           style={{
-            fontSize: 26,
+            fontSize: 24,
             fontWeight: 400,
             color: '#9E9589',
-            letterSpacing: '0.14em',
+            letterSpacing: '0.16em',
             textTransform: 'uppercase',
             marginTop: 24,
           }}
         >
           Your invisible operator.
-        </div>
-
-        {/* URL */}
-        <div
-          style={{
-            fontSize: 18,
-            fontWeight: 400,
-            color: '#E8943A',
-            letterSpacing: '0.1em',
-            marginTop: 48,
-            opacity: 0.8,
-          }}
-        >
-          duppy.ai
         </div>
       </div>
     ),
