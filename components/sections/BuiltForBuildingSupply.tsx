@@ -6,7 +6,7 @@ const industries = [
   {
     num: '01',
     name: 'Building Supply',
-    desc: 'BisTrack, Spruce, and DMSi all connected through one invisible operator. This is where we started.',
+    desc: 'Email, calendar, ERP, and CRM all connected through one invisible operator. This is where we started.',
   },
   {
     num: '02',
@@ -45,19 +45,23 @@ const integrations = [
     ),
   },
   {
-    name: 'DMSi',
-    mark: (
-      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
-        <path d="M3 3h7c4.4 0 8 3.6 8 8s-3.6 8-8 8H3V3z" stroke="white" strokeWidth="1.5" strokeLinejoin="round"/>
-        <path d="M7 8h4a3 3 0 0 1 0 6H7V8z" fill="white"/>
-      </svg>
-    ),
-  },
-  {
     name: 'Google Workspace',
     mark: (
       <svg width="22" height="22" viewBox="0 0 22 22" fill="white" aria-hidden="true">
         <path d="M11 1C5.5 1 1 5.5 1 11s4.5 10 10 10 10-4.5 10-10V9.5H11V13h5.8C15.8 15.8 13.6 17 11 17c-3.3 0-6-2.7-6-6s2.7-6 6-6c1.6 0 3 .6 4.1 1.6l2.8-2.8C16.2 2.2 13.7 1 11 1z"/>
+      </svg>
+    ),
+  },
+  {
+    name: 'Calendar',
+    mark: (
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true">
+        <rect x="1.5" y="3.5" width="19" height="17" rx="2" stroke="white" strokeWidth="1.5"/>
+        <path d="M1.5 8.5h19" stroke="white" strokeWidth="1.5"/>
+        <path d="M7 1.5v4M15 1.5v4" stroke="white" strokeWidth="1.5" strokeLinecap="round"/>
+        <rect x="5.5" y="12" width="3" height="3" rx="0.5" fill="white"/>
+        <rect x="9.5" y="12" width="3" height="3" rx="0.5" fill="white"/>
+        <rect x="13.5" y="12" width="3" height="3" rx="0.5" fill="white"/>
       </svg>
     ),
   },
