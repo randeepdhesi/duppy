@@ -75,10 +75,12 @@ export default function Footer() {
           {/* Brand column */}
           <div className="flex flex-col gap-6 md:max-w-sm">
             <div className="flex items-center gap-2.5">
-              <GhostIcon size={28} color="#E8943A" />
+              <div className="[&>svg]:!w-full [&>svg]:!h-full w-[40px] h-[40px] md:w-[34px] md:h-[34px]">
+                <GhostIcon size={34} color="#E8943A" />
+              </div>
               <span
-                className="text-white"
-                style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 700, fontSize: '26px', letterSpacing: '0.06em' }}
+                className="text-white text-[30px]"
+                style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 700, letterSpacing: '0.06em' }}
               >
                 DUPPY
               </span>

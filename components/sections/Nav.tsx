@@ -66,12 +66,12 @@ export default function Nav() {
         <div className="max-w-7xl mx-auto px-6 h-18 grid grid-cols-2 md:grid-cols-3 items-center">
           {/* Logo — left column */}
           <a href="/" className="flex items-center gap-2.5">
-            <div className="[&>svg]:!w-full [&>svg]:!h-full w-[34px] h-[34px] md:w-[28px] md:h-[28px]">
-              <GhostIcon size={28} color="#E8943A" />
+            <div className="[&>svg]:!w-full [&>svg]:!h-full w-[40px] h-[40px] md:w-[34px] md:h-[34px]">
+              <GhostIcon size={34} color="#E8943A" />
             </div>
             <span
-              className={`transition-colors ${scrolled ? 'text-duppy-text' : 'text-white'}`}
-              style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 700, fontSize: '26px', letterSpacing: '0.06em' }}
+              className={`transition-colors text-[30px] ${scrolled ? 'text-duppy-text' : 'text-white'}`}
+              style={{ fontFamily: 'var(--font-dm-sans), sans-serif', fontWeight: 700, letterSpacing: '0.06em' }}
             >
               DUPPY
             </span>

@@ -23,7 +23,9 @@ export default function CtaSection() {
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <FadeInSection>
           <div className="flex justify-center mb-8">
-            <GhostIcon size={48} color="#E8943A" className="ghost-float" />
+            <div className="[&>svg]:!w-full [&>svg]:!h-full w-24 h-24 md:w-[72px] md:h-[72px]">
+              <GhostIcon size={96} color="#E8943A" className="ghost-float" />
+            </div>
           </div>
 
           <h2
