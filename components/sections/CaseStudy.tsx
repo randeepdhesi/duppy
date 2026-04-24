@@ -126,7 +126,7 @@ export default function CaseStudy() {
                 <div style={{ width: 24, height: 24, borderRadius: 12, background: '#0C0A07', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
                   <GhostIcon size={13} color="#E8943A" />
                 </div>
-                <span style={{ color: '#1C1107', fontSize: 12, fontWeight: 700, letterSpacing: 3 }}>POWERED BY DUPPY</span>
+                <span className="font-extrabold md:font-bold" style={{ color: '#1C1107', fontSize: 12, letterSpacing: 3 }}>POWERED BY DUPPY</span>
               </div>
 
             </div>
