@@ -149,9 +149,12 @@ export default function Footer() {
         {/* Copyright row */}
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 py-6">
           <p className="text-duppy-muted text-sm">© 2026 DUPPY. All rights reserved.</p>
-          <p className="text-duppy-muted/40 text-xs italic" style={{ fontFamily: 'var(--font-fraunces), serif' }}>
-            Your invisible operator.
-          </p>
+          <div className="flex items-center gap-2">
+            <GhostIcon size={14} color="#E8943A" className="opacity-60" />
+            <p className="text-duppy-muted/40 text-xs italic" style={{ fontFamily: 'var(--font-fraunces), serif' }}>
+              Your invisible operator.
+            </p>
+          </div>
         </div>
       </div>
 
