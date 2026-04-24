@@ -42,7 +42,9 @@ export default function CtaSection() {
           </p>
 
           <a
-            href="mailto:hello@duppy.ai"
+            href="https://cal.com/duppy/demo"
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex items-center gap-3 bg-duppy-amber text-white font-semibold text-lg px-10 py-4 rounded-[12px] hover:bg-duppy-amber-dark transition-all duration-200 shadow-sm hover:shadow-md"
           >
             <GhostIcon size={22} color="white" bgColor="transparent" />
