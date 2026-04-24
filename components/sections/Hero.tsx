@@ -52,32 +52,6 @@ export default function Hero() {
               </Button>
             </div>
 
-            {/* Placeholder logo strip */}
-            <div className="mt-10 pt-8 border-t border-white/10 text-center lg:text-left">
-              <p className="text-white/30 text-[10px] uppercase tracking-[0.2em] font-semibold mb-5">Built for operators across North America</p>
-              <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-7 gap-y-4">
-                {/* Crown Supply */}
-                <div className="flex items-center gap-1.5 opacity-25 hover:opacity-40 transition-opacity duration-200">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><path d="M7 1L13 4v4c0 3-2.5 4.5-6 5-3.5-.5-6-2-6-5V4z" fill="white"/></svg>
-                  <span style={{ color: 'white', fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', fontFamily: 'var(--font-dm-sans), sans-serif' }}>CROWN</span>
-                </div>
-                {/* Ridgeline */}
-                <div className="flex items-center gap-1.5 opacity-25 hover:opacity-40 transition-opacity duration-200">
-                  <svg width="14" height="10" viewBox="0 0 14 10" fill="none"><path d="M1 9L5 2l3 4 2-3 3 6" stroke="white" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round"/></svg>
-                  <span style={{ color: 'white', fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', fontFamily: 'var(--font-dm-sans), sans-serif' }}>RIDGELINE</span>
-                </div>
-                {/* Summit */}
-                <div className="flex items-center gap-1.5 opacity-25 hover:opacity-40 transition-opacity duration-200">
-                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none"><circle cx="7" cy="7" r="5.5" stroke="white" strokeWidth="1.5"/><circle cx="7" cy="7" r="2" fill="white"/></svg>
-                  <span style={{ color: 'white', fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', fontFamily: 'var(--font-dm-sans), sans-serif' }}>SUMMIT</span>
-                </div>
-                {/* Northfield */}
-                <div className="flex items-center gap-1.5 opacity-25 hover:opacity-40 transition-opacity duration-200">
-                  <svg width="12" height="14" viewBox="0 0 12 14" fill="none"><rect x="1" y="1" width="10" height="12" rx="1.5" stroke="white" strokeWidth="1.5"/><path d="M3.5 5h5M3.5 8h3.5" stroke="white" strokeWidth="1.2" strokeLinecap="round"/></svg>
-                  <span style={{ color: 'white', fontSize: 13, fontWeight: 700, letterSpacing: '0.08em', fontFamily: 'var(--font-dm-sans), sans-serif' }}>NORTHFIELD</span>
-                </div>
-              </div>
-            </div>
 
           </FadeInSection>
 
