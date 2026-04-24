@@ -269,7 +269,7 @@ export default function ActionSequence() {
           borderRadius: 55, background: '#000', overflow: 'hidden',
           boxShadow: '0 0 0 2px #1c1c1c, 0 0 0 12px #0a0a0a, 0 0 0 14px #2a2a2a, 0 50px 120px rgba(0,0,0,0.5), 0 20px 40px rgba(0,0,0,0.4)',
         }}>
-          <div style={{ position: 'absolute', inset: 0, background: BG, display: 'flex', flexDirection: 'column', color: TEXT }}>
+          <div style={{ width: '100%', height: '100%', background: BG, display: 'flex', flexDirection: 'column', color: TEXT }}>
             <TopTabs/>
             <div style={{ flex: 1, overflow: 'hidden', position: 'relative', padding: '16px 16px 0' }}>
               <Feed t={t}/>

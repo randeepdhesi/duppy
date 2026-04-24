@@ -66,7 +66,7 @@ export default function CaseStudy() {
 
           {/* Right: Two-phone showcase from Claude Design */}
           <FadeInSection delay={0.15}>
-            <div className="flex justify-center overflow-hidden">
+            <div className="flex justify-center">
             <div
               className="flex flex-col items-center gap-8 mx-auto [transform:scale(0.68)] sm:[transform:scale(0.85)] lg:[transform:scale(1)] origin-top [margin-bottom:-200px] sm:[margin-bottom:-90px] lg:mb-0"
               style={{ width: 460 }}

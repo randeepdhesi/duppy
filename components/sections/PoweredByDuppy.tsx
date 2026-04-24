@@ -66,7 +66,7 @@ export default function PoweredByDuppy() {
                 />
                 {/* Frame */}
                 <div
-                  className="relative rounded-[36px] overflow-hidden border"
+                  className="relative rounded-[28px] overflow-hidden border"
                   style={{ width: PHONE_W, height: PHONE_H, borderColor: `${accent}55`, boxShadow: '0 24px 60px rgba(0,0,0,0.3)' }}
                 >
                   {/* Screen rendered at native 393px then scaled */}
