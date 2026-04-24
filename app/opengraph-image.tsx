@@ -70,30 +70,6 @@ export default function Image() {
           </div>
         </div>
 
-        {/* Amber rule */}
-        <div
-          style={{
-            width: 48,
-            height: 2,
-            backgroundColor: '#E8943A',
-            marginTop: 40,
-            borderRadius: 1,
-          }}
-        />
-
-        {/* Tagline */}
-        <div
-          style={{
-            fontSize: 24,
-            fontWeight: 400,
-            color: '#9E9589',
-            letterSpacing: '0.16em',
-            textTransform: 'uppercase',
-            marginTop: 24,
-          }}
-        >
-          Your invisible operator.
-        </div>
       </div>
     ),
     { ...size }
