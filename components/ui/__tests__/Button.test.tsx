@@ -12,9 +12,9 @@ describe('Button', () => {
     expect(screen.getByRole('link')).toHaveAttribute('href', '/contact')
   })
 
-  it('applies bg-accent for primary variant', () => {
+  it('applies bg-duppy-amber for primary variant', () => {
     render(<Button href="#" variant="primary">Primary</Button>)
-    expect(screen.getByRole('link').className).toMatch(/bg-accent/)
+    expect(screen.getByRole('link').className).toMatch(/bg-duppy-amber/)
   })
 
   it('applies border class for outline variant', () => {

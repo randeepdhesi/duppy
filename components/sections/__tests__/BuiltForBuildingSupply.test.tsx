@@ -14,7 +14,7 @@ describe('BuiltForBuildingSupply', () => {
 
   it('renders BisTrack in body copy', () => {
     render(<BuiltForBuildingSupply />)
-    expect(screen.getByText(/BisTrack/)).toBeInTheDocument()
+    expect(screen.getAllByText(/BisTrack/).length).toBeGreaterThan(0)
   })
 
   it('renders the image placeholder', () => {

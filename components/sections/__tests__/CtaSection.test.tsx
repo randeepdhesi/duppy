@@ -4,7 +4,7 @@ import CtaSection from '../CtaSection'
 describe('CtaSection', () => {
   it('renders the heading', () => {
     render(<CtaSection />)
-    expect(screen.getByText(/Ready to put an AI operator/i)).toBeInTheDocument()
+    expect(screen.getByText(/Ready to put an AI/i)).toBeInTheDocument()
   })
 
   it('renders the Get in touch button linking to email', () => {

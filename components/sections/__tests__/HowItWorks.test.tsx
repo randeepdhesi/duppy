@@ -9,12 +9,12 @@ describe('HowItWorks', () => {
 
   it('renders the heading', () => {
     render(<HowItWorks />)
-    expect(screen.getByText(/One voice command/i)).toBeInTheDocument()
+    expect(screen.getByText(/Speak\. It handles the rest/i)).toBeInTheDocument()
   })
 
   it('renders the description', () => {
     render(<HowItWorks />)
-    expect(screen.getByText(/counter person/i)).toBeInTheDocument()
+    expect(screen.getAllByText(/Pacific Coast Builders/i).length).toBeGreaterThan(0)
   })
 
   it('renders the phone placeholder', () => {

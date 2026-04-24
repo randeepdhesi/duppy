@@ -1,27 +1,60 @@
 import FadeInSection from '@/components/ui/FadeInSection'
 import SectionLabel from '@/components/ui/SectionLabel'
 import GhostIcon from '@/components/icons/GhostIcon'
+import Button from '@/components/ui/Button'
 
 const industries = [
   {
     num: '01',
     name: 'Building Supply',
     desc: 'Every quote, order, and delivery update runs through one operator that already knows your ERP, your inbox, and exactly how your business moves product.',
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/>
+        <polyline points="3.27 6.96 12 12.01 20.73 6.96"/>
+        <line x1="12" y1="22.08" x2="12" y2="12"/>
+      </svg>
+    ),
   },
   {
     num: '02',
     name: 'Trucking & Logistics',
     desc: 'Every load assignment, manifest, and driver check-in moves through one operator so your dispatch team always knows where things stand without chasing updates.',
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <rect x="1" y="3" width="15" height="13" rx="1"/>
+        <polygon points="16 8 20 8 23 11 23 16 16 16 16 8"/>
+        <circle cx="5.5" cy="18.5" r="2.5"/>
+        <circle cx="18.5" cy="18.5" r="2.5"/>
+      </svg>
+    ),
   },
   {
     num: '03',
     name: 'Law Firms',
     desc: 'Every new matter, billing reminder, and court date flows through one operator so your team spends their time on clients, not on tracking down information.',
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+        <path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/>
+        <path d="M7 21H17"/>
+        <path d="M12 3v18"/>
+        <path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>
+      </svg>
+    ),
   },
   {
     num: '04',
     name: 'Wholesale Distribution',
     desc: 'Every purchase order, inventory update, and customer follow-up runs through one operator so your sales and ops teams are always working from the same picture.',
+    icon: (
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.75" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
+        <path d="M3 3v16h18"/>
+        <path d="M18 17V9"/>
+        <path d="M13 17V5"/>
+        <path d="M8 17v-3"/>
+      </svg>
+    ),
   },
 ]
 
@@ -145,6 +178,11 @@ export default function BuiltForBuildingSupply() {
                   {/* Hover accent */}
                   <div className="absolute top-0 left-0 right-0 h-0.5 bg-duppy-amber scale-x-0 group-hover:scale-x-100 transition-transform duration-300 origin-left rounded-t-2xl" />
 
+                  {/* Icon — top right */}
+                  <div className="absolute top-7 right-7 text-duppy-amber opacity-30 group-hover:opacity-60 transition-opacity duration-300">
+                    {ind.icon}
+                  </div>
+
                   <span
                     className="text-duppy-amber/30 group-hover:text-duppy-amber/60 transition-colors duration-300 block mb-3"
                     style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: '12px', fontStyle: 'italic' }}
@@ -163,6 +201,23 @@ export default function BuiltForBuildingSupply() {
             </div>
           </FadeInSection>
         </div>
+
+        {/* Catch-all */}
+        <FadeInSection delay={0.2} className="mt-10">
+          <div className="flex flex-col sm:flex-row items-center justify-between gap-6 rounded-2xl border border-white/8 bg-white/[0.03] px-8 py-7">
+            <div className="flex items-center gap-4">
+              <GhostIcon size={32} color="#E8943A" bgColor="transparent" className="opacity-60 flex-shrink-0" />
+              <p className="text-duppy-muted text-base leading-snug">
+                <span className="text-white font-medium">Not on the list?</span>{' '}
+                Duppy can be tailored to any business that runs on more than one tool.
+              </p>
+            </div>
+            <Button href="https://cal.com/duppy/demo" variant="outline" size="default" className="whitespace-nowrap flex-shrink-0">
+              Let&apos;s talk
+            </Button>
+          </div>
+        </FadeInSection>
+
       </div>
     </section>
   )
