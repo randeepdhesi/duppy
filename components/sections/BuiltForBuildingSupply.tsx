@@ -6,7 +6,7 @@ const industries = [
   {
     num: '01',
     name: 'Building Supply',
-    desc: 'Email, calendar, ERP, and CRM all connected through one invisible operator. This is where we started.',
+    desc: 'Quotes, orders, deliveries, and customer follow-up spread across five different tools. Duppy ties them together so nothing falls through the cracks.',
   },
   {
     num: '02',
@@ -16,7 +16,7 @@ const industries = [
   {
     num: '03',
     name: 'Law Firms',
-    desc: 'Client intake, billing, calendar, and case management all connected through one invisible operator.',
+    desc: 'New matters, client follow-ups, billing reminders, and scheduling shouldn\'t each live in a different place. Duppy brings them together so your team spends less time chasing information.',
   },
   {
     num: '04',
