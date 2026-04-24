@@ -1,10 +1,18 @@
+'use client'
+
+import { useState } from 'react'
 import FadeInSection from '@/components/ui/FadeInSection'
 import Button from '@/components/ui/Button'
 import GhostIcon from '@/components/icons/GhostIcon'
 import CrownOSScreen from '@/components/sections/CrownOSScreen'
+import VideoModal from '@/components/ui/VideoModal'
 
 export default function Hero() {
+  const [videoOpen, setVideoOpen] = useState(false)
+
   return (
+    <>
+    {videoOpen && <VideoModal src="/duppy-os.mp4" onClose={() => setVideoOpen(false)} />}
     <section className="relative min-h-screen bg-duppy-dark flex items-center overflow-hidden grain-overlay">
 
       {/* Amber glow — top left */}
@@ -99,6 +107,7 @@ export default function Hero() {
                     />
                     {/* Glass button */}
                     <button
+                      onClick={() => setVideoOpen(true)}
                       className="relative flex items-center justify-center rounded-full cursor-pointer"
                       style={{
                         width: 70,
@@ -137,5 +146,6 @@ export default function Hero() {
         </div>
       </div>
     </section>
+    </>
   )
 }
