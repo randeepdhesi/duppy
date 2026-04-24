@@ -52,6 +52,9 @@ export default function Hero() {
               </Button>
             </div>
 
+            <div className="mt-10 pt-8 border-t border-white/10 text-center lg:text-left">
+              <p className="text-white/30 text-[10px] uppercase tracking-[0.2em] font-semibold">Built for operators across North America</p>
+            </div>
 
           </FadeInSection>
 
