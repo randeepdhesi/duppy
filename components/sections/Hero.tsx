@@ -54,7 +54,7 @@ export default function Hero() {
 
             {/* Placeholder logo strip */}
             <div className="mt-10 pt-8 border-t border-white/10 text-center lg:text-left">
-              <p className="text-white/30 text-[10px] uppercase tracking-[0.2em] font-semibold mb-5">Trusted by operators across North America</p>
+              <p className="text-white/30 text-[10px] uppercase tracking-[0.2em] font-semibold mb-5">Built for operators across North America</p>
               <div className="flex flex-wrap items-center justify-center lg:justify-start gap-x-7 gap-y-4">
                 {/* Crown Supply */}
                 <div className="flex items-center gap-1.5 opacity-25 hover:opacity-40 transition-opacity duration-200">

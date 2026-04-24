@@ -17,7 +17,7 @@ const cards = [
   },
   {
     num: '02',
-    title: 'Every System',
+    title: 'Every Tool',
     body: 'Duppy connects every tool your business already runs: your ERP, your email, your calendar, your CRM. Your team stops switching between systems and starts getting answers from one place.',
     icon: (
       <svg width="44" height="44" viewBox="0 0 28 28" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round" aria-hidden="true">
