@@ -4,14 +4,14 @@ import Nav from '../Nav'
 describe('Nav', () => {
   it('renders the duppy.ai logo text', () => {
     render(<Nav />)
-    expect(screen.getByText('duppy.ai')).toBeInTheDocument()
+    expect(screen.getByText('DUPPY')).toBeInTheDocument()
   })
 
   it('renders all three nav links', () => {
     render(<Nav />)
+    expect(screen.getByText('Why Duppy')).toBeInTheDocument()
     expect(screen.getByText('How it works')).toBeInTheDocument()
     expect(screen.getByText('Industries')).toBeInTheDocument()
-    expect(screen.getByText('About')).toBeInTheDocument()
   })
 
   it('renders the Get in touch button', () => {

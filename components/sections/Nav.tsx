@@ -4,9 +4,9 @@ import { useState, useEffect } from 'react'
 import GhostIcon from '@/components/icons/GhostIcon'
 
 const navLinks = [
+  { label: 'Why Duppy', href: '#why-duppy' },
   { label: 'How it works', href: '#how-it-works' },
   { label: 'Industries', href: '#industries' },
-  { label: 'About', href: '#about' },
 ]
 
 const socials = [

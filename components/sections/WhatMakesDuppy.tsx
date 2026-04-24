@@ -39,7 +39,7 @@ const cards = [
 
 export default function WhatMakesDuppy() {
   return (
-    <section className="relative bg-duppy-cream py-28 px-6 overflow-hidden">
+    <section id="why-duppy" className="relative bg-duppy-cream py-28 px-6 overflow-hidden">
       <div
         className="absolute right-[-60px] top-1/2 -translate-y-1/2 pointer-events-none ghost-drift"
         aria-hidden="true"
