@@ -96,12 +96,13 @@ export default function Nav() {
           <div className="flex items-center justify-end">
             <a
               href="mailto:hello@duppy.ai"
-              className={`hidden md:inline-flex text-base font-semibold px-5 py-2.5 rounded-[10px] transition-all duration-200 ${
+              className={`hidden md:inline-flex items-center gap-2.5 text-base font-semibold px-5 py-2.5 rounded-[10px] transition-all duration-200 ${
                 scrolled
                   ? 'bg-duppy-amber text-white hover:bg-duppy-amber-dark shadow-sm'
                   : 'border border-white/30 text-white hover:bg-white/10'
               }`}
             >
+              <GhostIcon size={16} color="currentColor" bgColor="transparent" />
               Get in touch
             </a>
 
@@ -179,8 +180,9 @@ export default function Nav() {
             <div className="flex flex-col gap-5">
               <a
                 href="mailto:hello@duppy.ai"
-                className="w-full bg-duppy-amber text-white font-semibold text-lg py-4 rounded-[12px] hover:bg-duppy-amber-dark transition-colors text-center"
+                className="w-full bg-duppy-amber text-white font-semibold text-lg py-4 rounded-[12px] hover:bg-duppy-amber-dark transition-colors inline-flex items-center justify-center gap-3"
               >
+                <GhostIcon size={20} color="white" bgColor="transparent" />
                 Get in touch
               </a>
 
