@@ -61,7 +61,7 @@ export default function Hero() {
                 DUPPY in action
               </button>
               <Button href="https://duppy.typeform.com/pricing" variant="outline" size="large">
-                Get pricing
+                See Pricing for My Team
               </Button>
             </div>
 
