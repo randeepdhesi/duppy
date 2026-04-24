@@ -16,34 +16,35 @@ export default function GhostIcon({
   bgColor,
 }: Props) {
   const id = `ghost-wisp-${Math.random().toString(36).slice(2, 7)}`
-  const bodyPath = 'M 20,1 C 9,1 2,8 2,17 L 2,30 Q 2,38 8,38 Q 11,38 13,34 Q 15,30 17,34 Q 19,38 20,38 Q 21,38 23,34 Q 25,30 27,34 Q 29,38 32,38 Q 38,38 38,30 L 38,17 C 38,8 31,1 20,1 Z'
+  const bodyPath =
+    'M 478.35 53.57 L 538.96 54.65 L 591.99 64.39 L 624.46 74.13 L 679.65 99.03 L 725.11 128.25 L 761.9 159.63 L 797.62 199.68 L 826.84 244.05 L 841.99 274.35 L 859.31 321.97 L 867.97 357.68 L 873.38 402.06 L 873.38 748.38 L 869.05 764.61 L 860.39 778.68 L 844.16 792.75 L 823.59 800.32 L 687.23 800.32 L 668.83 805.74 L 661.26 810.06 L 535.71 934.52 L 517.32 944.26 L 496.75 946.43 L 480.52 943.18 L 462.12 932.36 L 344.16 814.39 L 329 804.65 L 312.77 800.32 L 177.49 800.32 L 162.34 796 L 151.52 789.5 L 142.86 781.93 L 134.2 770.02 L 126.62 747.29 L 126.62 403.14 L 130.95 365.26 L 138.53 330.63 L 150.43 292.75 L 162.34 265.69 L 181.82 229.98 L 213.2 186.69 L 248.92 149.89 L 285.71 120.67 L 320.35 99.03 L 372.29 75.22 L 432.9 58.98 L 461.04 54.65 L 477.27 54.65 Z'
 
   if (outline) {
     return (
       <svg
         width={size}
         height={size}
-        viewBox="0 0 40 40"
+        viewBox="0 0 1000 1000"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
         aria-hidden="true"
       >
-        <path d={bodyPath} stroke={color} strokeWidth="2" strokeLinejoin="round" fill="none" />
-        <circle cx="15" cy="18" r="2" stroke={color} strokeWidth="1.5" />
-        <circle cx="25" cy="18" r="2" stroke={color} strokeWidth="1.5" />
+        <path d={bodyPath} stroke={color} strokeWidth="30" strokeLinejoin="round" fill="none" />
+        <circle cx="348.48" cy="416.13" r="88.20" stroke={color} strokeWidth="30" />
+        <circle cx="652.60" cy="416.13" r="88.20" stroke={color} strokeWidth="30" />
       </svg>
     )
   }
 
-  // Transparent punch-through eyes: sub-paths combined with body using evenodd fill rule
+  // Transparent punch-through eyes via evenodd fill rule
   if (bgColor === 'transparent') {
     const eyePaths =
-      'M12.8,18 a2.2,2.2 0 1,0 4.4,0 a2.2,2.2 0 1,0 -4.4,0 ' +
-      'M22.8,18 a2.2,2.2 0 1,0 4.4,0 a2.2,2.2 0 1,0 -4.4,0'
+      'M260.28,416.13 a88.20,88.20 0 1,0 176.40,0 a88.20,88.20 0 1,0 -176.40,0 ' +
+      'M564.40,416.13 a88.20,88.20 0 1,0 176.40,0 a88.20,88.20 0 1,0 -176.40,0'
     if (withWisp) {
       return (
-        <svg width={size} height={size} viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-hidden="true">
+        <svg width={size} height={size} viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg" className={className} aria-hidden="true">
           <defs>
             <linearGradient id={id} x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor={color} stopOpacity="1" />
@@ -59,7 +60,7 @@ export default function GhostIcon({
       <svg
         width={size}
         height={size}
-        viewBox="0 0 40 40"
+        viewBox="0 0 1000 1000"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         className={className}
@@ -74,7 +75,7 @@ export default function GhostIcon({
     <svg
       width={size}
       height={size}
-      viewBox="0 0 40 40"
+      viewBox="0 0 1000 1000"
       fill={color}
       xmlns="http://www.w3.org/2000/svg"
       className={className}
@@ -90,10 +91,8 @@ export default function GhostIcon({
         </defs>
       )}
       <path d={bodyPath} fill={withWisp ? `url(#${id})` : color} />
-      <circle cx="15" cy="18" r="2.2" fill={bgColor ?? 'white'} fillOpacity="0.95" />
-      <circle cx="25" cy="18" r="2.2" fill={bgColor ?? 'white'} fillOpacity="0.95" />
-      <circle cx="15.6" cy="18.5" r="0.9" fill={color} fillOpacity="0.5" />
-      <circle cx="25.6" cy="18.5" r="0.9" fill={color} fillOpacity="0.5" />
+      <circle cx="348.48" cy="416.13" r="88.20" fill={bgColor ?? '#0E0E0E'} />
+      <circle cx="652.60" cy="416.13" r="88.20" fill={bgColor ?? '#0E0E0E'} />
     </svg>
   )
 }
