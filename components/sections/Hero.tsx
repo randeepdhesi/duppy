@@ -58,7 +58,7 @@ export default function Hero() {
               >
                 See
                 <GhostIcon size={20} color="white" bgColor="transparent" />
-                DUPPY in action
+                Duppy in action
               </button>
               <Button href="https://duppy.typeform.com/pricing" variant="outline" size="large" className="whitespace-nowrap">
                 Get pricing for my team
