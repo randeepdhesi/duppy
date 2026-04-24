@@ -49,7 +49,7 @@ export default function PoweredByDuppy() {
             Your business. Your brand. Powered by Duppy.
           </h2>
           <p className="text-duppy-body text-lg max-w-xl">
-            We don't sell generic software. We build an invisible operator exclusively for your business, connecting every tool you already use and working silently behind your brand.
+            We don't sell generic software. We build an invisible operator that connects every tool your business already uses and runs completely invisible behind your brand.
           </p>
         </FadeInSection>
 
