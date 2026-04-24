@@ -68,7 +68,7 @@ export default function CaseStudy() {
           <FadeInSection delay={0.15}>
             <div className="flex justify-center">
             <div
-              className="flex flex-col items-center gap-8 mx-auto [transform:scale(0.68)] sm:[transform:scale(0.85)] lg:[transform:scale(1)] origin-top [margin-bottom:-200px] sm:[margin-bottom:-90px] lg:mb-0"
+              className="flex flex-col items-center gap-8 mx-auto [transform:scale(0.80)] sm:[transform:scale(0.85)] lg:[transform:scale(1)] origin-top [margin-bottom:-120px] sm:[margin-bottom:-90px] lg:mb-0"
               style={{ width: 460 }}
             >
 
@@ -119,14 +119,14 @@ export default function CaseStudy() {
                   background: '#E8943A',
                   border: '1px solid #C97A28',
                   borderRadius: 999,
-                  padding: '12px 24px',
+                  padding: '14px 28px',
                   boxShadow: '0 20px 40px rgba(232,148,58,0.35)',
                 }}
               >
-                <div style={{ width: 24, height: 24, borderRadius: 12, background: '#0C0A07', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
-                  <GhostIcon size={13} color="#E8943A" />
+                <div style={{ width: 26, height: 26, borderRadius: 13, background: '#0C0A07', display: 'flex', alignItems: 'center', justifyContent: 'center', flexShrink: 0 }}>
+                  <GhostIcon size={14} color="#E8943A" />
                 </div>
-                <span className="font-extrabold md:font-bold" style={{ color: '#1C1107', fontSize: 12, letterSpacing: 3 }}>POWERED BY DUPPY</span>
+                <span className="font-extrabold md:font-bold" style={{ color: '#1C1107', fontSize: 13, letterSpacing: 3 }}>POWERED BY DUPPY</span>
               </div>
 
             </div>
