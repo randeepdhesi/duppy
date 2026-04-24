@@ -52,7 +52,7 @@ export default function WhatMakesDuppy() {
           <SectionLabel className="mb-4 block">Why Duppy</SectionLabel>
           <h2
             className="text-duppy-text leading-tight max-w-2xl"
-            style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: 'clamp(32px, 4vw, 52px)' }}
+            style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: 'clamp(24px, 7vw, 52px)' }}
           >
             We don't replace anything.{' '}
             <span className="block sm:inline">We connect everything.</span>
