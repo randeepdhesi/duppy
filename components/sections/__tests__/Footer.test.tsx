@@ -4,7 +4,7 @@ import Footer from '../Footer'
 describe('Footer', () => {
   it('renders duppy.ai brand name', () => {
     render(<Footer />)
-    expect(screen.getByText('duppy.ai')).toBeInTheDocument()
+    expect(screen.getAllByText('DUPPY').length).toBeGreaterThan(0)
   })
 
   it('renders the tagline', () => {
@@ -18,14 +18,8 @@ describe('Footer', () => {
     expect(screen.getByText('Industries')).toBeInTheDocument()
   })
 
-  it('renders company links', () => {
-    render(<Footer />)
-    expect(screen.getByText('About')).toBeInTheDocument()
-    expect(screen.getByText('Contact')).toBeInTheDocument()
-  })
-
   it('renders copyright', () => {
     render(<Footer />)
-    expect(screen.getByText(/2026 Duppy\.ai/i)).toBeInTheDocument()
+    expect(screen.getByText(/2026 DUPPY/i)).toBeInTheDocument()
   })
 })
