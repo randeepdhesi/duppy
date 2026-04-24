@@ -12,19 +12,19 @@ const instances = [
     Screen: FreightLinkScreen,
     accent: '#89CFF0',
     industry: 'Freight & Logistics',
-    blurb: 'Dispatch, routing, and driver tracking. Fully voice-operated.',
+    blurb: 'Dispatch, routing, and driver tracking managed through a single voice-powered operator.',
   },
   {
     Screen: SummitAutoScreen,
     accent: '#FFFFFF',
     industry: 'Auto Dealerships',
-    blurb: 'Check stock, manage leads, and close deals. Hands-free.',
+    blurb: 'Check live inventory, manage leads, and close deals without ever switching between systems.',
   },
   {
     Screen: LexingtonLawScreen,
     accent: '#C5B358',
     industry: 'Legal Services',
-    blurb: 'Case research, client scheduling, and updates. Instant.',
+    blurb: 'Pull case files, schedule clients, and send updates through one interface built around your practice.',
   },
 ]
 
@@ -49,7 +49,7 @@ export default function PoweredByDuppy() {
             Your business. Your brand. Powered by Duppy.
           </h2>
           <p className="text-duppy-body text-lg max-w-xl">
-            We don't sell generic software. We build an invisible operator exclusively for your business, working silently in the background to speed up your entire operation.
+            We don't sell generic software. We build an invisible operator exclusively for your business, connecting every tool you already use and working silently behind your brand.
           </p>
         </FadeInSection>
 
