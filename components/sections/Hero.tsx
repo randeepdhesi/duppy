@@ -40,7 +40,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-duppy-muted leading-relaxed max-w-md mb-12" style={{ fontSize: 'clamp(16px, 1.6vw, 19px)' }}>
-              Most businesses run on five systems that can't talk to each other. Duppy connects your software and makes it act as one.
+              Most businesses run on five separate tools that can't talk to each other. Duppy connects them so you can run your whole business from one place.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
