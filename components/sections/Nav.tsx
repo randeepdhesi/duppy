@@ -66,7 +66,7 @@ export default function Nav() {
         <div className="max-w-7xl mx-auto px-6 h-18 grid grid-cols-2 md:grid-cols-3 items-center">
           {/* Logo — left column */}
           <a href="/" className="flex items-center gap-2.5">
-            <div className="[&>svg]:!w-full [&>svg]:!h-full w-[40px] h-[40px] md:w-[34px] md:h-[34px]">
+            <div className="[&>svg]:!w-full [&>svg]:!h-full w-[36px] h-[36px] md:w-[34px] md:h-[34px]">
               <GhostIcon size={34} color="#E8943A" />
             </div>
             <span

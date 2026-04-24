@@ -75,7 +75,7 @@ export default function Footer() {
           {/* Brand column */}
           <div className="flex flex-col gap-6 md:max-w-sm">
             <div className="flex items-center gap-2.5">
-              <div className="[&>svg]:!w-full [&>svg]:!h-full w-[40px] h-[40px] md:w-[34px] md:h-[34px]">
+              <div className="[&>svg]:!w-full [&>svg]:!h-full w-[36px] h-[36px] md:w-[34px] md:h-[34px]">
                 <GhostIcon size={34} color="#E8943A" />
               </div>
               <span
