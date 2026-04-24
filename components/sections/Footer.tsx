@@ -150,7 +150,7 @@ export default function Footer() {
         <div className="flex flex-col sm:flex-row justify-between items-center gap-4 py-6">
           <p className="text-duppy-muted text-sm">© 2026 DUPPY. All rights reserved.</p>
           <p className="text-duppy-muted/40 text-xs italic" style={{ fontFamily: 'var(--font-fraunces), serif' }}>
-            The invisible operator.
+            Your invisible operator.
           </p>
         </div>
       </div>

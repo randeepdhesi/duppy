@@ -17,11 +17,11 @@ const dmSans = DM_Sans({
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://duppy.ai'),
-  title: 'Duppy | The Invisible Operator',
+  title: 'Duppy | Your Invisible Operator',
   description:
     'Duppy connects your ERP, email, CRM, and calendar into one voice-powered operator. Built for your brand, deployed in days.',
   openGraph: {
-    title: 'Duppy — The Invisible Operator',
+    title: 'Duppy | Your Invisible Operator',
     description:
       'Duppy connects your ERP, email, CRM, and calendar into one voice-powered operator. Built for your brand, deployed in days.',
     url: 'https://duppy.ai',
@@ -31,7 +31,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Duppy — The Invisible Operator',
+    title: 'Duppy | Your Invisible Operator',
     description:
       'Duppy connects your ERP, email, CRM, and calendar into one voice-powered operator. Built for your brand, deployed in days.',
     images: ['/og-image.jpg'],

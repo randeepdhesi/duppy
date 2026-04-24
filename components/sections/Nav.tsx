@@ -188,7 +188,7 @@ export default function Nav() {
               <div className="flex items-center justify-center gap-2">
                 <GhostIcon size={16} color="#E8943A" />
                 <span className="text-duppy-muted text-xs italic" style={{ fontFamily: 'var(--font-fraunces), serif' }}>
-                  The invisible operator.
+                  Your invisible operator.
                 </span>
               </div>
             </div>
