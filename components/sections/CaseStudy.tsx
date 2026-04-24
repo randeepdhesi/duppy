@@ -25,7 +25,7 @@ export default function CaseStudy() {
 
           {/* Left: Content */}
           <FadeInSection>
-            <SectionLabel light className="mb-6 block">Case study</SectionLabel>
+            <SectionLabel light className="mb-6 block">Real results</SectionLabel>
 
             <h2
               className="text-white leading-tight mb-6"
@@ -35,7 +35,7 @@ export default function CaseStudy() {
             </h2>
 
             <p className="text-duppy-muted text-lg leading-relaxed mb-8">
-              Crown Building Supplies uses Duppy to connect their entire operation. Their reps can check live inventory, draft quotes, and close deals right from the job site, without ever opening a laptop or calling the office.
+              Crown Building Supplies connected their ERP, email, and CRM on day one. Now their reps check inventory, draft quotes, and close deals from the job site — no laptop, no hold music, no back-and-forth with the desk.
             </p>
 
             <div className="grid grid-cols-3 gap-4 mb-10">
