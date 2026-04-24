@@ -30,7 +30,7 @@ export default function Hero() {
               className="text-white leading-[1.05] tracking-tight mb-8"
               style={{
                 fontFamily: 'var(--font-fraunces), serif',
-                fontSize: 'clamp(50px, 4vw, 56px)',
+                fontSize: 'clamp(28px, 9vw, 56px)',
                 fontStyle: 'italic',
               }}
             >
