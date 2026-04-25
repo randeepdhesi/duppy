@@ -102,18 +102,23 @@ export default function Hero() {
                   <CrownOSScreen />
                 </div>
 
-                {/* Glassmorphism play button */}
-                <div className="absolute inset-0 flex items-center justify-center" style={{ zIndex: 10 }}>
+                {/* Glassmorphism play button — full phone area is tappable */}
+                <div
+                  className="absolute inset-0 flex items-center justify-center cursor-pointer"
+                  style={{ zIndex: 10 }}
+                  onClick={() => setVideoOpen(true)}
+                  role="button"
+                  aria-label="Play demo video"
+                >
                   <div className="relative flex items-center justify-center">
                     {/* Pulse ring */}
                     <div
                       className="absolute rounded-full animate-ping"
                       style={{ width: 80, height: 80, background: 'rgba(255,255,255,0.12)', animationDuration: '2.4s' }}
                     />
-                    {/* Glass button */}
-                    <button
-                      onClick={() => setVideoOpen(true)}
-                      className="relative flex items-center justify-center rounded-full cursor-pointer"
+                    {/* Glass button — visual only */}
+                    <div
+                      className="relative flex items-center justify-center rounded-full pointer-events-none"
                       style={{
                         width: 70,
                         height: 70,
@@ -123,12 +128,11 @@ export default function Hero() {
                         border: '1px solid rgba(255,255,255,0.28)',
                         boxShadow: '0 4px 24px rgba(0,0,0,0.35), inset 0 1px 0 rgba(255,255,255,0.22)',
                       }}
-                      aria-label="Play demo video"
                     >
                       <svg width="22" height="22" viewBox="0 0 24 24" fill="none" style={{ marginLeft: 3 }}>
                         <path d="M7 4.5v15l11-7.5z" fill="white" />
                       </svg>
-                    </button>
+                    </div>
                   </div>
                 </div>
               </div>
