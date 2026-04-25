@@ -72,9 +72,12 @@ export default function HowItWorks() {
             ))}
 
             <FadeInSection delay={0.5}>
-              <div className="hidden md:flex items-center gap-3 px-2 mt-2">
+              <div className="flex items-center gap-3 px-2 mt-2">
                 <GhostIcon size={24} color="#E8943A" className="opacity-80" />
-                <p className="text-duppy-muted text-sm md:text-base">Three tasks complete in under 10 seconds. That's your invisible operator at work.</p>
+                <p className="text-duppy-muted text-sm md:text-base">
+                  Three tasks complete in under 10 seconds.<br />
+                  That&apos;s your invisible operator at work.
+                </p>
               </div>
             </FadeInSection>
           </div>
