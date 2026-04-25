@@ -167,7 +167,9 @@ export default function Nav() {
             {/* Bottom row */}
             <div className="flex flex-col gap-5">
               <a
-                href="mailto:hello@duppy.ai"
+                href="https://cal.com/duppy/demo"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full bg-duppy-amber text-white font-semibold text-lg py-4 rounded-[12px] hover:bg-duppy-amber-dark transition-colors inline-flex items-center justify-center gap-3"
               >
                 <GhostIcon size={20} color="white" bgColor="transparent" />
