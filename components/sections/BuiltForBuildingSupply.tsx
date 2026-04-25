@@ -202,18 +202,7 @@ export default function BuiltForBuildingSupply() {
           </FadeInSection>
         </div>
 
-        {/* Catch-all — mobile */}
-        <FadeInSection delay={0.2} className="mt-10 md:hidden">
-          <div className="flex items-center justify-center gap-3">
-            <GhostIcon size={18} color="#E8943A" bgColor="transparent" className="opacity-50 flex-shrink-0" />
-            <p className="text-duppy-muted text-sm text-center">
-              <span className="text-white/70">Not on the list?</span>{' '}
-              Duppy can be tailored to any business that runs on more than one tool.
-            </p>
-          </div>
-        </FadeInSection>
-
-        {/* Catch-all — desktop */}
+        {/* Catch-all — desktop only */}
         <FadeInSection delay={0.2} className="mt-10 hidden md:block">
           <div className="flex items-center justify-between gap-6 rounded-2xl border border-white/8 bg-white/[0.03] px-8 py-7">
             <div className="flex items-center gap-4">
