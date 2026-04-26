@@ -205,7 +205,7 @@ export default function BuiltForBuildingSupply() {
         {/* Catch-all — mobile */}
         <FadeInSection delay={0.2} className="mt-10 md:hidden">
           <div className="flex items-start justify-center gap-3">
-            <GhostIcon size={24} color="#E8943A" bgColor="transparent" className="opacity-50 flex-shrink-0 mt-0.5" />
+            <GhostIcon size={24} color="#E8943A" className="opacity-80 flex-shrink-0" />
             <p className="text-duppy-muted text-sm text-left">
               <span className="text-white/70">Not on the list?</span><br />
               Duppy can be tailored to any business.
