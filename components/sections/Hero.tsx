@@ -48,7 +48,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-duppy-muted leading-relaxed max-w-md mb-12" style={{ fontSize: 'clamp(16px, 1.6vw, 19px)' }}>
-              Most businesses run on five separate tools that can't talk to each other. Duppy connects them so you can run your whole business from one place.
+              Your business runs on a stack of tools that don't talk to each other. Duppy connects them into one interface.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
@@ -60,8 +60,8 @@ export default function Hero() {
                 <GhostIcon size={20} color="white" bgColor="transparent" />
                 Duppy in action
               </button>
-              <Button href="https://form.typeform.com/to/PEElHTwn" variant="outline" size="large" className="whitespace-nowrap">
-                Get pricing for my team
+              <Button href="https://cal.com/duppy/demo" variant="outline" size="large" className="whitespace-nowrap">
+                Book a 15-min demo
               </Button>
             </div>
 
