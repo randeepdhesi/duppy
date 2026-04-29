@@ -13,7 +13,7 @@ interface StatItem {
 }
 
 const stats: StatItem[] = [
-  { value: 12, suffix: 'x', label: 'Faster than your current process', duration: 800 },
+  { value: 12, suffix: 's', label: 'Avg per task', duration: 800 },
   { value: null, suffix: 'Zero', label: 'New software to learn', duration: 0 },
   { value: null, suffix: 'Days', label: 'Not months, to launch', duration: 0 },
   { value: 1, suffix: ' interface', label: 'To run your operations', duration: 600 },
