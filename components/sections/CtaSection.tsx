@@ -32,9 +32,9 @@ export default function CtaSection() {
             className="text-duppy-text leading-tight mb-4"
             style={{ fontFamily: 'var(--font-fraunces), serif', fontSize: 'clamp(32px, 4vw, 52px)' }}
           >
-            Ready to give your team
+            Ready to meet your
             <br />
-            <em>an unfair advantage?</em>
+            <em>invisible operator?</em>
           </h2>
 
           <p className="text-duppy-body text-lg mb-10">
